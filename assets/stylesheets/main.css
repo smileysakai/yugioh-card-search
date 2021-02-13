@@ -5,3 +5,14 @@
 .topper {
 	padding-top: 100px
 }
+
+a .cardpreview {
+    display:none;
+    position:absolute;
+    width:400px;
+    height:400px;
+}
+
+a:hover .cardpreview{
+	display:block
+}

@@ -45,10 +45,16 @@
 					{data: "type"},
 					{data: "race"},
 					{data: "desc"},
-					{data: "card_images.0.image_url_small"}
+					{data: "card_images.0.image_url",
+					"render": function ( data, type, row, meta ) {
+						return '<a class="tiptext" href="'+data+'">Card Image<iframe class="cardpreview" src="'+data+'"></iframe></a>';
+					}}
 				]
 			} );
 		} );
+		
+		
+
 		
 		</script>
 		
